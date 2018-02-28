@@ -1,0 +1,205 @@
+
+
+==============
+condtional statements
+=======
+1]IF
+==========
+ if(<condition>){
+  body of the block}
+else
+{
+}
+
+if(a<10){
+sysout("a="+a)}//a=10   /* multiline comment */
+====================
+2]else if ladder
+=============
+int a;
+a=10;
+if(a==10)
+{
+}
+-----------
+if(<cond1>){
+  body 
+}
+else if (<cond2>){
+	body
+}
+else if(<cond 3>){
+body
+}
+else{
+....}
+==========
+3]SWITCH STATEMENT
+=============
+int a=2;
+switch(a){
+	case 1:sysout("case 1");
+               break;
+         case 2:sysout("case 2");
+               break;
+          default:sysout("invalid");
+}
+------------
+loops or Iterations
+==============
+repeated execution
+loop variable
+initialization condition incrementation/decrementation
+
+1)while loop(Entry controlled loop)
+--------
+int a=1;//initilaization of loop variable
+while(a<101)//condition{
+	sysout(a);
+         a++;//inrement}
+
+int a=100;
+while(a>0){
+	sysout(a);
+         a--;}
+
+2)do..while loop(exit controlled loop)
+=========
+
+int a=1;//initialization of loop variable
+do{
+	sysout(a);
+         a++;//inrement}while(a<101);
+-----------
+3)for loop
+=======
+for(int i=0;i<10;i++){
+     sysout(i);}
+===================
+Arrays
+=======
+
+int a; //2 Bytes
+a=10;
+int []a=new int(10);
+mem locn 1000  1002  1004
+index      0     1	2   3 ..... 9 
+           a[0]  a[1]               a[9]
+-------------
+int []a=new int(10);
+a={3,4,6....8}
+for(int i=0;i<10; i++){
+  sysout(a[i]);}
+
+===================
+Methods(functions)
+==========
+defenition
+invocation/method call
+access specifier-public,private,protected,default
+Method Defenition
+===============
+<access specifier> <return type > <methodname>(formalparameters/arguements){
+...........body
+.............
+.............}
+==================
+static-class method
+public static void main(String args[]){
+	int a,b,s=0;
+	a=5;
+	b=3;
+         s=a+b;
+        sysout(s);
+}
+---------------
+1]with args no return type
+========================
+void sum(int x,int y){//defenition
+	int s=0;
+	s=x+y;
+	sysout(s);
+ }
+public static void main(String args[]){
+	int a,b;
+	a=5;
+        b=3;
+        sum(a,b);//method invocaton/call/actual                   parameters
+}
+================================
+2]with args and return type
+    int sum(int x,int y){//defenition
+	int s=0;
+	s=x+y;
+	return(s);
+ }
+public static void main(String args[]){
+	int a,b,s=0;
+	a=5;
+        b=3;
+        s=sum(a,b);//method invocaton/call/actual            sysout(s); 
+}            parameters
+==================================
+3]without args and no return type
+============
+void sum(){//defenition
+	int x=2,y=3,s=0;
+	s=x+y;
+	sysout(s);
+ }
+
+public static void main(String args[]){
+	
+	
+        
+        sum();//method invocaton/call/actual             
+}      
+=======================
+Immutability of String
+
+String a="abc";
+String a=new String("abc");
+ String Pool
+=====================
+Concepts OOPS
+==========
+1]Abstraction
+=============
+Hiding the mplementation details
+
+2]Encapsulation
+================
+Class is a real world entity
+variables/features
+methods/behaviour
+Object is an instance of a class
+Person
+-----
+Name
+Id
+address
+phone num
+job
+family
+passprot 
+license
+ Wrapping up of member variables and memeber function within a singel unit called class is called data encapsulation.
+--------
+
+3]Inheritacne
+--------
+Automobile
+2 wheelers 3 wheelers 4 wheelers
+
+
+  Animal    Base class/parent class
+dog   cat    Subclass/child class
+ 
+
+
+
+
+
+4]Polymorphism
+=============
+Ability to take more than one forms
